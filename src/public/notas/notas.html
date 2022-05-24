@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        .container {
+            max-width: 900px;
+            margin-top: 15vh;
+        }
+        body {
+            background-image: url('./fondo.jpg');
+        }
+
+        select, option {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="container-fluid py-2 bg-info">
+        <h1 class="text-center text-secondary p-2">Institucion N°000</h1>
+    </nav>
+    <main class="container border border-secondary bg-light p-2 g-0 rounded">
+        <div class="row mb-3 g-0">
+            <div class="col-4">
+                <select class="form-select g-0" aria-label="Default select example">
+                    <option selected>Bimestre 1</option>
+                    <option value="1">Bimestre 2</option>
+                    <option value="2">Bimestre 3</option>
+                    <option value="3">Bimestre 4</option>
+                    <option value="4">Todos</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Tabla de notas -->
+        <table class="table table-success table-striped g-0">
+            <thead>
+                <tr>
+                    <th scope="col"><p class="font-monospace fs-6">Bimestre</th>
+                    <th scope="col"><p class="font-monospace fs-6">Matemáticas</th>
+                    <th scope="col"><p class="font-monospace fs-6">Comunicación</th>
+                    <th scope="col"><p class="font-monospace fs-6">Inglés</th>
+                    <th scope="col"><p class="font-monospace fs-6">CTA</th>
+                    <th scope="col"><p class="font-monospace fs-6">CC. SS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>15</td>
+                    <td>17</td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>14</td>
+                    <td>14</td>
+                    <td>14</td>
+                    <td>14</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+
+</html>

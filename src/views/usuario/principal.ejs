@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuario</title>
+</head>
+
+<body>
+    <form>
+        <table>
+            <thead>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Genero</th>
+            </thead>
+            <tbody>
+                <% result.forEach(function(mascot) { %>
+                    <tr>
+                        <td>
+                            <%= mascot.nombre %>
+                        </td>
+                        <td>
+                            <%= mascot.edad %>
+                        </td>
+                        <td>
+                            <%= mascot.genero %>
+                        </td>
+                    </tr>
+                    <% }); %>
+            </tbody>
+            <!-- <ul>
+                <% result.forEach(function(mascot) { %>
+                    <li>
+                        <strong>
+                            <%= mascot.nombre %>
+                        </strong>
+                        representing <%= mascot.edad %>, born <%= mascot.genero %>
+                    </li>
+                    <% }); %>
+            </ul> -->
+        </table>
+    </form>
+</body>
+
+</html>

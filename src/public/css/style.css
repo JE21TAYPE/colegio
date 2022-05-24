@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../fondo.jpg');
+    background-size: 100vw 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.card {
+    flex-grow: 1;
+    margin: 1rem;
+}
+
+.container-form {
+    border-radius: .2rem;
+    padding: .5rem;
+    padding-left: 1rem;
+    background-color: white;
+    height: 60vh;
+}
+
+.title {
+    text-align: center;
+    color: hsl(210, 92%, 37%);
+    margin-bottom: 2rem;
+}
+
+.txt__form {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+input {
+    width: 80%;
+    margin-bottom: 2rem;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid #39c;
+    outline: #39c;
+    border-width: 2px;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.btnSend {
+    background-color: blue;
+    padding: 1em;
+    border-radius: .5rem;
+    border: none;
+    font-size: .8rem;
+    text-transform: uppercase;
+    color: white;
+    display: block;
+    margin: .5rem auto;
+    cursor: pointer;
+}
+
+@media (max-width: 840px) {
+    .container-txt {
+        display: none;
+    }
+
+    /*  .container {
+        display: block;
+    } */
+
+}
